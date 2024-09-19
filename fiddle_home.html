@@ -6,7 +6,33 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
     <style>
+        .ab {
+            background: #00000082;
+        }
+
+        .weblogo {
+            height: 65px;
+        }
+
+        .f li a {
+            color: white;
+            font-size: 15px;
+            margin-right: 21px;
+            font-weight: lighter;
+        }
+
+        a:hover {
+            background: rgba(255, 166, 0, 0.765);
+            color: white;
+        }
+
+        .moblogo {
+            display: none;
+        }
+
         .img123 {
             width: 80%;
         }
@@ -58,36 +84,35 @@
             /* height: 465px; */
         }
 
+
+
         footer {
             background: #020306f0;
-            padding: 50px;
             color: #fff;
         }
 
         footer h2 {
-            font-family: 'prague';
-            font-size: 2 rem;
-            line-height: 50px;
+            font-family: prague;
             letter-spacing: 3px;
-            color: #fff;
+            font-size: 40px;
         }
 
         footer p {
-            font-size: 16px;
-            line-height: 28px;
-            letter-spacing: 1px;
-            margin-top: 0;
-            margin-bottom: 1rem;
-            text-align: justify;
+            word-spacing: 1px;
+            line-height: 27px;
+            font-weight: 450;
+            font-size: 19px;
+            color: aliceblue;
         }
 
         footer .foot-add {
             padding: 15px;
         }
 
-        footer b {
-            color: #fcb21b;
-        }
+        /* .icon { */
+        /* font-size: 40px; */
+        /* color: orange; */
+        /* } */
 
 
 
@@ -101,11 +126,47 @@
             .img44 {
                 width: 100%;
             }
+
+            .moblogo {
+                display: block;
+            }
+
+            .ab {
+                background: #fbac1b;
+            }
+
+            .weblogo {
+                display: none;
+            }
         }
     </style>
 </head>
 
 <body>
+    <nav class="navbar ab navbar-expand-md fixed-top">
+        <div class="container-fluid">
+            <a href="" class="navbar-brand">
+                <img src="image/ff-logo-02.png" alt="" class="weblogo">
+                <img src="image/logo-for-mobile.png" alt="" class="moblogo">
+            </a>
+            <button class="navbar-toggler" data-bs-target="#aa" data-bs-toggle="collapse">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="navbar-collapse collapse text-center" id="aa">
+                <ul class="navbar-nav ms-auto f">
+                    <li><a href="fiddle_home.html" class="nav-link">HOME</a></li>
+                    <li><a href="fiddle_about..html" class="nav-link">ABOUT</a></li>
+                    <li><a href="fiddle_brands.html" class="nav-link">BRAND</a></li>
+                    <li><a href="fiddle_ourteam.html" class="nav-link">OUR TEAM</a></li>
+                    <li><a href="fiddle_press.html" class="nav-link">PRESS RELEASE</a></li>
+                    <li><a href="fiddle_contact.html" class="nav-link">CONTACT</a></li>
+                    <li><a href="fiddle_carrers.html" class="nav-link">CARRERS</a></li>
+                    <li><a href="#" class="nav-link" style="border: 1px solid orange;">FRANCHISE</a></li>
+                </ul>
+            </div>
+        </div><!--contaner-fluid end-->
+    </nav><!--navbar end-->
+
     <div class="container">
         <h2 class="text-center a">Welcome To <b style="color: orange;">FIRST FIDDLE</b></h2>
         <br>
@@ -180,54 +241,62 @@
 
     </div><!--row end-->
     </div><!--conatainer-fluid end-->
-
     <footer>
         <div class="container-fluid">
             <div class="row">
-                <div class="col-md-5 text-center">
-                    <img src="image/ff-logo-02.png" alt="" style="margin-top: 30px;width: 50%;">
+                <div class="col-md-1"></div>
+                <div class="col-md-3">
+                    <img src="image/ff-logo-02.png" alt="" style="width: 80%;margin-top: 52px;">
                 </div>
-                <div class="col-md-7">
-                    <h2 class="">
-                        <span style="color:#ffad00;">CONTACT</span>Us
+                <div class="col-md-1"></div>
+                <div class="col-md-6">
+                    <h2 class="mt-5">
+                        <span style="color:#ffad00;">CONTACT</span> US
                     </h2>
                     <p>We're a team focusing on redefining the way the hospitality industry works by bringing in concept
                         based restaurants across India. We are truly committed to catering to the ever-changing
                         cosmopolitan taste of the customer and revolutioning the F & B industry!</p>
                     <div class="row">
                         <div class="col-md-6 foot-add">
-                            <span>
-                                <b>Address</b>
-                                <br>
-                                S-357 2nd floor, Block S, Panchsheel Park South, Panchsheel Park, New Delhi, Delhi
-                                110017
-                            </span>
+                            <h2 style="color: #ffad00; font-size: 15px;">ADDRESS</h2>
+                            <p class="text-light" style="font-size: 16px;">S-357 2nd floor, Block S, Panchsheel Park
+                                South, Panchsheel Park, New Delhi, Delhi 110017
+                            </p>
                         </div>
                         <div class="col-md-6 foot-add">
-                            <span>
-                                <b>Franchise Enquiry</b>
-                                <br>
-                                Mobile: <a href=""><b>+91 9313663486</b></a>
-                                <br>
-                                Email: <a href=""><b>franchise@firstfiddle.in</b></a>
-                            </span>
+                            <h2 style="color: #ffad00; font-size: 15px;">ENQUIRY</h2>
+                            <p style="font-size: 16px;">
+                                Email:<span style="color: #ffad00;"> customercare@firstfiddle.in</span>
+                            </p>
                         </div>
                     </div><!--row end-->
+                    <div class="container-fluid">
+                        <div class="row mt-4">
+                            <div class="col-md-7 mb-4">
+                                <i class="fa-brands fa-facebook" style="color: orange; font-size: 40px;"></i>
+                                <i class="fa-brands fa-instagram"
+                                    style="color: orange; font-size: 40px; margin-left: 3px;"></i>
+                                <i class="fa-brands fa-whatsapp"
+                                    style="color: orange; font-size: 40px; margin-left: 3px;"></i>
+                            </div>
+                        </div><!--row end-->
+                    </div><!--container-fluid end-->
                 </div>
-
-                <div class="row">
-                    <div class="col-md-6 foot-add">
-                        <h3>hello</h3>
-                    </div>
-                    <div class="col-md-6 foot-add">
-                        <h3>hello</h3>
-                    </div>
-                </div><!--row end-->
-
             </div><!--row end-->
-        </div><!--container fluid end-->
-    </footer>
-
+        </div><!--container-fluid end-->
+    </footer><!--footer end-->
+    <div class="container-fluid" style="background: black;">
+        <div class="row">
+            <div class="col-md-3"></div>
+            <div class="col-md-6">
+                <p class="L mt-3 text-white" style="font-weight: 250;">EMPLOYEE POLICIES |PRIVACY POLICY |TERMS AND
+                    CONDITIONS | BLOG | APP
+                    <b style="margin-left: 90px; font-weight: 250;">COPYRIGHT © 2021 FIRST FIDDLE F&B PRIVATE
+                        LIMITED</b>
+                </p>
+            </div>
+        </div><!--row end-->
+    </div><!--container-fluid end-->
 </body>
 
 </html>
