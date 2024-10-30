@@ -89,26 +89,29 @@
 
         .cc li .f2 {
             color: #987c4b;
-            width: max-content;
-            position: relative;
             font-weight: 600;
+        }
+
+        .f2 {
+            position: relative;
+            width: max-content;
         }
 
         .f2::after {
             content: "";
             position: absolute;
-            height: 1px;
-            width: 100%;
-            background-color: #987c4b;
-            transition: 0.3s;
-            transition-timing-function: ease-in-out;
-            transform: scaleX(0)
+            bottom: 0;
+            left: 0;
+            background: #987c4b;
+            height: 2px;
+            width: 0;
+            border-radius: 10px;
+            transition: .8s;
         }
 
         .f2:hover::after {
-            transform: scaleX(1)
+            width: 100%;
         }
-
 
         @media(max-width:768px) {
             .weblogo {
@@ -128,6 +131,13 @@
                 padding-right: 242px;
             }
         }
+
+        @media(max-width:1280px) {
+            .flex {
+                padding-right: 257px;
+                margin-left: 42px;
+            }
+        }
     </style>
 </head>
 
@@ -142,7 +152,7 @@
             <div class="navbar-collapse collapse text-center" id="aaa">
                 <ul class="navbar-nav f">
                     <li><a href="esport.html" class=" f1 nav-link">HOME</a></li>
-                    <li><a href="" class=" f1 nav-link">ABOUT</a></li>
+                    <li><a href="Esport_about.html" class=" f1 nav-link">ABOUT</a></li>
                     <li><a href="" class=" f1 nav-link">CARREER</a></li>
                 </ul>
             </div>
@@ -305,14 +315,14 @@
                             <div class="col-md-3">
                                 <ul>
                                     <li><a class="f2" href="esport.html">Home</a></li>
-                                    <li><a class="f2" href="">About</a></li>
+                                    <li><a class="f2" href="Esport_about.html">About</a></li>
                                     <li><a class="f2" href="">Carreer</a></li>
                                 </ul>
                             </div>
                             <div class="col-md-3 mb-4">
                                 <ul>
                                     <li><a class="f2" href="EsportPrivacy.html">Privacy</a></li>
-                                    <li><a class="f2" href="">FAQ</a></li>
+                                    <li><a class="f2" href="EsportsFAQs.html">FAQ</a></li>
                                 </ul>
                             </div>
                         </div>
@@ -331,7 +341,7 @@
             </div>
         </div><!--row end-->
     </div><!--container end-->
-     <!--footer end-->
+    <!--footer end-->
 </body>
 
 </html>

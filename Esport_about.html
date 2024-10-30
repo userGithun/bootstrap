@@ -1,0 +1,906 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <script src="/js/bootstrap.bundle.min.js"></script>
+    <style>
+        .ab {
+            background: #00000082;
+        }
+
+        .weblogo {
+            height: 30px;
+            margin-left: 26px;
+            margin-top: 4px;
+            margin-right: 50px;
+        }
+
+        .moblogo {
+            display: none;
+        }
+
+        .f li a {
+            color: white;
+            font-size: 13px;
+            margin-right: 33px;
+            font-weight: 600;
+            letter-spacing: 1px;
+            font-family: var(--ri-forma-regular);
+        }
+
+        .f1:hover {
+            background: #987c4b;
+            border-radius: 5px;
+            width: 90%;
+        }
+
+        .ccc {
+            background: url(image/bgmi\(1\).png);
+            width: 100%;
+            /* height: 800px; */
+            background-position: center;
+            background-size: cover;
+        }
+
+        .cfont {
+            color: #ffffff;
+            font-size: 45px;
+            padding-top: 332px;
+            font-family: fantasy;
+            letter-spacing: 2px;
+            margin-bottom: 16rem;
+        }
+
+        /* slide start */
+        @keyframes slide {
+            from {
+                transform: translateX(0);
+            }
+
+            to {
+                transform: translateX(-100%);
+            }
+        }
+
+        .logo {
+            background: linear-gradient(to bottom, #000000, #977c4b);
+            padding: 26px 0;
+            overflow: hidden;
+            white-space: nowrap;
+
+        }
+
+        .logo-slide {
+            animation: 20s slide infinite linear;
+            display: inline-block;
+            mix-blend-mode: multiply;
+        }
+
+        .logo-slide img {
+            /* height: 50px; */
+            margin: 0 40px;
+        }
+
+        /* slide end */
+        .bannerbg {
+            /* background: url(image/grey-bg.png); */
+            background: #d8d0cd;
+        }
+
+        .mobbanner {
+            display: none;
+        }
+
+        .format-video {
+            padding: 120px 0 88px;
+        }
+
+        .video-thumb {
+            width: 995px;
+            height: 563px;
+            border: 4px solid yellow;
+        }
+
+        .video-thumb {
+            margin: 0px auto;
+            position: relative;
+        }
+
+        .video-thumbnail img {
+            width: 100%;
+            height: 100%;
+        }
+
+        .shadow-layer {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            top: 0;
+            right: 0;
+            left: 0;
+            z-index: 1;
+        }
+
+        .play-bt {
+            position: absolute;
+            top: 44%;
+            left: 50%;
+            font-size: 40px;
+            color: white;
+            /* transition: all 0.5s ease 0s;
+            transform: translate(50%, 50%); */
+        }
+
+        .format-info {
+            color: white;
+            font-size: 60px;
+            font-weight: 600;
+            letter-spacing: 1px;
+            margin-bottom: 12px;
+            margin-top: -22px;
+        }
+
+        .formar-color {
+            /* background: #a2d0bc; */
+            background: linear-gradient(to right, #203220, #135B38);
+            color: #a2d0bc;
+        }
+
+        .formar-color-2 {
+            background: linear-gradient(to right, #135B38, #092909fc);
+            color: #F3F9F7;
+            font-size: 18px;
+            font-weight: 400;
+        }
+
+        .logo {
+            background: linear-gradient(to right, #51462e, #977c4b);
+            padding: 24px 0;
+            overflow: hidden;
+            white-space: nowrap;
+
+        }
+
+        .logo-slide-2 {
+            animation: 11s slide infinite linear;
+            display: inline-block;
+        }
+
+        .logo-slide-2 img {
+            height: 36px;
+            margin: 0 25px;
+        }
+
+        @keyframes slide {
+            from {
+                transform: translateX(0);
+            }
+
+            to {
+                transform: translateX(-100%);
+            }
+        }
+
+
+
+        .price-info p {
+            text-transform: uppercase;
+            font-weight: 500;
+            font-size: 30px;
+            color: #333439;
+            line-height: 0px;
+
+        }
+
+        .price-info h1 {
+            font-size: 66px;
+            font-weight: 500;
+        }
+
+        .totle-price {
+            font-size: 46px;
+            font-weight: 500;
+            color: #15754A;
+            line-height: 44px;
+        }
+
+        .price-posi {
+            color: #15754A;
+            margin-top: 32px;
+            font-size: 16px;
+            text-transform: uppercase;
+            font-style: normal;
+            font-weight: 600;
+            line-height: 12px;
+            letter-spacing: -0.32px;
+        }
+
+        .price-text {
+            color: #135B38;
+            margin-top: 32px;
+            font-size: 16px;
+            font-style: normal;
+            font-weight: 600;
+            line-height: 12px;
+            letter-spacing: -0.32px;
+        }
+
+        .accordion-item {
+            outline: none;
+            border: none;
+        }
+
+        .cc {
+            background: url(image/footer\ Background_aaa878262d.png);
+            width: 100%;
+            /* height: 159px; */
+
+        }
+
+        .cc li {
+            list-style: none;
+            margin-top: 10px;
+        }
+
+        .cc li a {
+            color: white;
+            text-decoration: none;
+        }
+
+        .flex {
+            display: flex;
+            justify-content: space-between;
+            padding-right: 508px;
+        }
+
+        .cc li .f2 {
+            color: #987c4b;
+            font-weight: 600;
+        }
+
+        .f2 {
+            position: relative;
+            width: max-content;
+        }
+
+        .f2::after {
+            content: "";
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            background: #987c4b;
+            height: 2px;
+            width: 0;
+            border-radius: 10px;
+            transition: .8s;
+        }
+
+        .f2:hover::after {
+            width: 100%;
+        }
+
+
+        @media (max-width:768px) {
+            .weblogo {
+                display: none;
+            }
+
+            .moblogo {
+                display: block;
+                height: 30px;
+            }
+
+
+            .webbanner {
+                display: none;
+            }
+
+            .mobbanner {
+                display: block;
+                width: 100%;
+            }
+
+            .price-info,
+            .price-posi,
+            .totle-price {
+                text-align: center;
+            }
+
+            .totle-price {
+                font-size: 43px;
+            }
+
+            .weblogo {
+                display: none;
+            }
+
+            .moblogo {
+                display: block;
+                height: 30px;
+            }
+
+            .banner video {
+                width: 100%;
+            }
+
+            .cc {
+                width: 100%;
+            }
+
+            .flex {
+                padding-right: 242px;
+            }
+        }
+
+        @media (max-width:1080px) {
+            .video-thumb {
+                width: 342px;
+                height: 196px;
+            }
+        }
+
+
+        @media (max-width: 1025px) {
+            .video-thumb {
+                width: 636px;
+                height: 362px;
+            }
+
+            .format-video {
+                padding: 62px 0 88px;
+            }
+
+            .play-bt {
+                top: 39%;
+                left: 47%;
+                font-size: 53px;
+            }
+
+            .totle-price {
+                font-size: 29px;
+                font-weight: 500;
+                color: #15754A;
+                line-height: 26px;
+            }
+
+            .price-posi {
+                font-size: 13px;
+            }
+        }
+
+        @media (max-width: 540px) {
+            .video-thumb {
+                width: 485px;
+                height: 276px;
+            }
+
+            .format-video {
+                padding: 62px 0 88px;
+            }
+        }
+
+        @media (max-width: 412px) {
+            .video-thumb {
+                width: 285px;
+                height: 165px;
+            }
+
+            .format-video {
+                padding: 49px 0 88px;
+            }
+        }
+
+        @media (max-width: 414px) {
+            .video-thumb {
+                width: 317px;
+                height: 183px;
+            }
+
+            .format-video {
+                padding: 64px 0 88px;
+            }
+        }
+
+        @media (max-width: 431px) {
+            .video-thumb {
+                width: 294px;
+                height: 170px;
+            }
+
+            .format-video {
+                padding: 49px 0 58px;
+            }
+
+            .play-bt {
+                top: 33%;
+                left: 44%;
+                font-size: 34px;
+            }
+
+            .totle-price {
+                font-size: 46px;
+            }
+
+            .price-posi {
+                font-size: 21px;
+            }
+        }
+
+        @media (max-width:325px) {
+
+            .video-thumb {
+                width: 199px;
+                height: 115px;
+            }
+
+            .format-video {
+                padding: 62px 0 88px;
+            }
+
+        }
+
+        @media (max-width: 232px) {
+            .video-thumb {
+                width: 152px;
+                height: 91px;
+            }
+
+            .format-video {
+                padding: 62px 0 88px;
+            }
+        }
+
+        @media(max-width:1280px) {
+            .flex {
+                padding-right: 257px;
+                /* margin-left: 42px; */
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <nav class="navbar ab navbar-expand-md fixed-top">
+        <div class="container-fluid">
+            <img src="image/eSportCup.png" alt="" class="weblogo">
+            <img src="image/eSportCup.png" alt="" class="moblogo">
+
+            <button class="navbar-toggler" data-bs-target="#aaa" data-bs-toggle="collapse">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="navbar-collapse collapse text-center" id="aaa">
+                <ul class="navbar-nav f">
+                    <li><a href="esport.html" class=" f1 nav-link">HOME</a></li>
+                    <li><a href="Esport_about.html" class=" f1 nav-link">ABOUT</a></li>
+                    <li><a href="" class=" f1 nav-link">CARREER</a></li>
+                </ul>
+            </div>
+
+
+        </div><!--contaner-fluid end-->
+    </nav><!--navbar end-->
+
+
+
+    <!--banner 1 start-->
+    <div class="container-fluid ccc">
+        <div class="row">
+            <div class="col-md-1"></div>
+            <div class="col-md-6">
+                <h3 class="cfont"> <span style="font-size: 137px;">ABOUT</span> <br>
+                    <span style="color: #e46c1b;">BATTLE</span>GROUND'S MOBILE <span
+                        style="color: #8bb01c;">I</span>NDIA
+                </h3>
+            </div>
+        </div>
+    </div><!--containter-fluid end-->
+    <!--banner 1 end-->
+
+    <!--slide start-->
+    <div class="logo  ">
+        <div class="logo-slide">
+            <img src="image/Pro_Series_2024_allmode.png" style="height: 100px;" alt="">
+            <img src="image/iqoo-logo.png" style="height: 32px;" alt="">
+            <img src="image/hero-removebg-preview.png" style="height: 72px;" alt="">
+            <img src="image/krafton.india.png" style="height: 110px;" alt="">
+            <img src="image/Pro_Series_2024_allmode.png" style="height: 100px;" alt="">
+            <img src="image/iqoo-logo.png" style="height: 32px;" alt="">
+            <img src="image/hero-removebg-preview.png" style="height: 72px;" alt="">
+            <img src="image/krafton.india.png" style="height: 110px;" alt="">
+            <img src="image/Pro_Series_2024_allmode.png" style="height: 100px;" alt="">
+            <img src="image/iqoo-logo.png" style="height: 32px;" alt="">
+            <img src="image/hero-removebg-preview.png" style="height: 72px;" alt="">
+            <img src="image/krafton.india.png" style="height: 110px;" alt="">
+
+        </div>
+        <div class="logo-slide">
+            <img src="image/Pro_Series_2024_allmode.png" style="height: 100px;" alt="">
+            <img src="image/iqoo-logo.png" style="height: 32px;" alt="">
+            <img src="image/hero-removebg-preview.png" style="height: 72px;" alt="">
+            <img src="image/krafton.india.png" style="height: 110px;" alt="">
+            <img src="image/Pro_Series_2024_allmode.png" style="height: 100px;" alt="">
+            <img src="image/iqoo-logo.png" style="height: 32px;" alt="">
+            <img src="image/hero-removebg-preview.png" style="height: 72px;" alt="">
+            <img src="image/krafton.india.png" style="height: 110px;" alt="">
+            <img src="image/Pro_Series_2024_allmode.png" style="height: 100px;" alt="">
+            <img src="image/iqoo-logo.png" style="height: 32px;" alt="">
+            <img src="image/hero-removebg-preview.png" style="height: 72px;" alt="">
+            <img src="image/krafton.india.png" style="height: 110px;" alt="">
+
+        </div>
+    </div>
+    <!--slide end-->
+
+    <!--banner 2 start-->
+    <div class="container-fluid bannerbg">
+        <div class="container">
+            <div class="col-md-12">
+                <img src="image/bgmi-banner-pc@3x.png" class="webbanner" style="width: 100%;">
+                <img src="image/bgmiMOB-banner-mobile@3x.png" class="mobbanner" alt="">
+            </div>
+        </div><!--container end-->
+    </div><!--container-fluid end-->
+    <!--banner 2 end-->
+
+    <!--thumbnail start-->
+    <div class="container-fluid" style="background: #135B38;">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="format-video">
+                        <div class="video-thumb">
+                            <div class="video-thumbnail">
+                                <a href="">
+                                    <div class="shadow-layer"></div>
+                                    <img src="image/path to glory Thumbnail.jpg" alt="video">
+                                    <span class="play-bt">
+                                        <i class="text-center fa-regular fa-circle-play"></i>
+                                    </span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div><!--row 1 end-->
+
+            <!--About format start-->
+            <div class="accordion" id="accordionPanelsStayOpenExample">
+                <h2 class="format-info">FORMAT</h2>
+                <div class="row">
+                    <div class="col-md-5">
+                        <div class="accordion-item mb-3">
+                            <h2 class="accordion-header">
+                                <button class="formar-color accordion-button collapsed" type="button"
+                                    data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseOne"
+                                    aria-expanded="false" aria-controls="panelsStayOpen-collapseOne">
+                                    <div>
+                                        <h2>ROUND 1</h2>
+                                        <p style="margin: 0;">20th Aug - 5th Sept</p>
+                                    </div>
+                                </button>
+                            </h2>
+                            <div id="panelsStayOpen-collapseOne" class="accordion-collapse collapse">
+                                <div class="formar-color-2 accordion-body">
+                                    <strong>
+                                        <h4 style="color: #EFC204;">ROUND 1</h4>
+                                    </strong> 128 invited teams will be divided into two sets: Blue and Red. Each set
+                                    will be further divided into 4 groups of 16 teams each. Round 1 will span over two
+                                    weeks and after week 1 matches, teams will be reshuffled into Blue & Red sets based
+                                    on overall standings. The reshuffled sets will play in the same format as week 1.
+                                    The top 64 teams based on the overall standings after both weeks will move to Round
+                                    2.
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-7">
+                        <div class="accordion-item mb-3">
+                            <h2 class="accordion-header">
+                                <button class="formar-color accordion-button collapsed" type="button"
+                                    data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapsetwo"
+                                    aria-expanded="false" aria-controls="panelsStayOpen-collapsetwo">
+                                    <div>
+                                        <h2>ROUND 2</h2>
+                                        <p style="margin: 0;">7th Sept - 10th Sep</p>
+                                    </div>
+                                </button>
+                            </h2>
+                            <div id="panelsStayOpen-collapsetwo" class="accordion-collapse collapse">
+                                <div class="formar-color-2 accordion-body">
+                                    <strong>
+                                        <h4 style="color: #EFC204;">ROUND 2</h4>
+                                    </strong> The top 64 teams from Round 1 will be divided into 4 groups of 16 teams
+                                    each, with each group playing 6 matches. Top 48 teams based on the overall ranking
+                                    will advance to Round 3.
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item mb-3">
+                    <h2 class="accordion-header">
+                        <button class="formar-color accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#panelsStayOpen-collapsethree" aria-expanded="false"
+                            aria-controls="panelsStayOpen-collapsethree">
+                            <div>
+                                <h2>ROUND 3</h2>
+                                <p style="margin: 0;">11th Sept - 14th Sept</p>
+                            </div>
+
+                        </button>
+                    </h2>
+                    <div id="panelsStayOpen-collapsethree" class="accordion-collapse collapse">
+                        <div class="formar-color-2 accordion-body">
+                            <strong>
+                                <h4 style="color: #EFC204;">ROUND 3</h4>
+                            </strong> 48 teams from Round 2 will be divided into 3 groups of 16 teams each. Each team
+                            will play 4 matches across 2 days. After that, the teams will be reshuffled into new groups
+                            based on the overall points standings and will play in the same format for the next 2 days.
+                            The top 24 teams based on the cumulative standings will qualify for the semi-finals.
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-md-7">
+                        <div class="accordion-item mb-3">
+                            <h2 class="accordion-header">
+                                <button class="formar-color accordion-button collapsed" type="button"
+                                    data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapsefour"
+                                    aria-expanded="false" aria-controls="panelsStayOpen-collapsefour">
+                                    <div>
+                                        <h2>SEMI FINALS</h2>
+                                        <p style="margin: 0;">15th Sept - 18th Sept</p>
+                                    </div>
+                                </button>
+                            </h2>
+                            <div id="panelsStayOpen-collapsefour" class="accordion-collapse collapse">
+                                <div class="formar-color-2 accordion-body">
+                                    <strong>
+                                        <H4 style="color: #EFC204;">SEMI-FINALS</H4>
+                                    </strong> The 24 qualifying teams from Round 3 will be divided into 3 groups of 8
+                                    where teams will play 4 rounds of double round-robin matches. Each team will play 4
+                                    matches per day and a total of 16 matches. The top 16 teams from the overall
+                                    standings will advance to the Grand Finals.
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-5">
+                        <div class="accordion-item mb-5">
+                            <h2 class="accordion-header">
+                                <button class="formar-color accordion-button collapsed" type="button"
+                                    data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapsefive"
+                                    aria-expanded="false" aria-controls="panelsStayOpen-collapsefive">
+                                    <div>
+                                        <h2>GRAND FINALS</h2>
+                                        <p style="margin: 0;">27th Sept - 29th Sept</p>
+                                    </div>
+                                </button>
+                            </h2>
+                            <div id="panelsStayOpen-collapsefive" class="accordion-collapse collapse">
+                                <div class="formar-color-2 accordion-body">
+                                    <strong>
+                                        <h4 style="color: #EFC204;">GRAND-FINALS</h4>
+                                    </strong> The 16 remaining teams will compete in this high-stakes LAN event and will
+                                    play a total of 18 matches over three days. The team that finishes at the top spot
+                                    of the points table will be crowned the champions of BMPS 2024.
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!---About format end-->
+
+        </div><!--container end-->
+    </div><!-- container fluid end -->
+    <!--thumbnail end-->
+
+    <!--slide 2 start-->
+    <div class="logo">
+        <div class="logo-slide-2">
+            <img src="image/eSportCup.png" alt="">
+            <img src="image/Ecc on web.png" alt="">
+            <img src="image/eSportCup.png" alt="">
+            <img src="image/Ecc on web.png" alt="">
+            <img src="image/eSportCup.png" alt="">
+            <img src="image/Ecc on web.png" alt="">
+        </div>
+        <div class="logo-slide-2">
+            <img src="image/eSportCup.png" alt="">
+            <img src="image/Ecc on web.png" alt="">
+            <img src="image/eSportCup.png" alt="">
+            <img src="image/Ecc on web.png" alt="">
+            <img src="image/eSportCup.png" alt="">
+            <img src="image/Ecc on web.png" alt="">
+        </div>
+    </div>
+
+    <!--slide 2 end-->
+
+
+    <!--price path start-->
+    <div class="container mt-3">
+        <div class="row">
+            <div class="col-md-12 mt-5">
+                <div class="price-info ">
+                    <p>Total price pool</p>
+                    <h1>₹ 2,00,00,000</h1>
+                </div>
+            </div>
+        </div><!--1 end-->
+        <div class="row">
+            <div class="price-posi">
+                <p style="color: #135B38;">champions</p>
+            </div>
+            <div class="col-md-12">
+                <h1 class="totle-price">
+                    <span style="font-size: 54px; color: #135B38;">₹ 75,00,000</span>
+                </h1>
+            </div>
+        </div><!--2 end-->
+        <div class="row ">
+            <div class="col-md-3">
+                <div>
+                    <p class="price-posi">Runners Up</p>
+                    <h3 class="totle-price">₹ 30,00,000</h3>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div>
+                    <p class="price-posi">2nd Runners Up</p>
+                    <h3 class="totle-price">₹ 20,00,000</h3>
+                </div>
+            </div>
+        </div><!--3 end-->
+        <div class="row mt-4">
+            <div class="col-md-3">
+                <div>
+                    <p class="price-posi">4th position</p>
+                    <h3 class="totle-price">₹ 12,50,000</h3>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div>
+                    <p class="price-posi">5th position</p>
+                    <h3 class="totle-price">₹ 10,00,000</h3>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div>
+                    <p class="price-posi">6th position</p>
+                    <h3 class="totle-price">₹ 8,00,000</h3>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div>
+                    <p class="price-posi">7th position</p>
+                    <h3 class="totle-price">₹ 7,00,000</h3>
+                </div>
+            </div>
+        </div><!--4 end-->
+
+        <div class="row mb-4">
+            <div class="col-md-3">
+                <div>
+                    <p class="price-posi">8th position</p>
+                    <h3 class="totle-price">₹ 6,00,000</h3>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div>
+                    <p class="price-posi">9th - 10th position</p>
+                    <h3 class="totle-price">₹ 5,00,000</h3>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div>
+                    <p class="price-posi">11th - 12th position</p>
+                    <h3 class="totle-price">₹ 3,00,000</h3>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div>
+                    <p class="price-posi">13th - 16th position</p>
+                    <h3 class="totle-price">₹ 2,00,000</h3>
+                </div>
+            </div>
+        </div><!--5 end-->
+
+        <div class="row" style="border-top: 1px solid #74b99b;">
+            <div class="col-md-3">
+                <div>
+                    <p class="price-posi">iQOO MVP OF THE TOURNAMENT</p>
+                    <h3 class="totle-price">₹ 4,00,000</h3>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div>
+                    <p class="price-posi">In-Game Leader</p>
+                    <h3 class="totle-price">₹ 2,00,000</h3>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div>
+                    <p class="price-posi">Emerging star</p>
+                    <h3 class="totle-price">₹ 1,00,000</h3>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div>
+                    <p class="price-posi">Fan Fav player</p>
+                    <h3 class="totle-price">₹ 50,000</h3>
+                </div>
+            </div>
+        </div><!--6 end-->
+
+        <div class="row">
+            <div class="col-md-3">
+                <div>
+                    <p class="price-posi">Hero Xtreme MVP of the Finals</p>
+                    <h3 class="totle-price">Xtreme 160R</h3>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div>
+                    <p class="price-posi">Hero Xtreme Survivor of the Finals</p>
+                    <h3 class="totle-price">Xtreme 125R</h3>
+                </div>
+            </div>
+        </div><!--7 end-->
+    </div><!--container end-->
+
+    <!--footer start-->
+    <footer>
+        <div class="container-fluid cc mt-5">
+            <div class="row">
+                <div class="col-md-1"></div>
+                <div class="col-md-3">
+                    <img src="image/eSportCup.png" alt="" width="302px" style="margin-top: 42px;">
+                </div>
+                <div class="col-md-1"></div>
+                <div class="col-md-6 mt-3 mb-5">
+                    <div class="row">
+                        <div class="flex">
+                            <div class="col-md-3">
+                                <ul>
+                                    <li><a class="f2" href="esport.html">Home</a></li>
+                                    <li><a class="f2" href="Esport_about.html">About</a></li>
+                                    <li><a class="f2" href="">Carreer</a></li>
+                                </ul>
+                            </div>
+                            <div class="col-md-3 mb-4">
+                                <ul>
+                                    <li><a class="f2" href="EsportPrivacy.html">Privacy</a></li>
+                                    <li><a class="f2" href="EsportsFAQs.html">FAQ</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div><!--row end-->
+        </div><!--container fluid end-->
+    </footer>
+    <div class="container-fluid " style="background: #987c4b;">
+        <div class="row">
+            <div class="col-md-12">
+                <h6 class=" text-center text-white mt-2" style="font-size: 12px;">© 2024 Esports Champ Cup | All rights
+                    reserved.</h6>
+            </div>
+        </div><!--row end-->
+    </div><!--container end-->
+    <!--footer end-->
+
+
+</body>
+
+</html>

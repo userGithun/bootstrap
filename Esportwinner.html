@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <script src="/js/bootstrap.bundle.min.js"></script>
+    <style>
+        .weblogo {
+            /* background: url(image/tx-banner-pc@3x.png); */
+            width: 100%;
+            background-position: center;
+            background-size: cover;
+        }
+
+        .cc {
+            background: url(image/footer\ Background_aaa878262d.png);
+        }
+
+        .moblogo {
+            display: none;
+            width: 100%;
+            background-position: center;
+            background-size: cover;
+        }
+
+        @media (max-width:768px) {
+            .weblogo {
+                display: none;
+            }
+
+            .moblogo {
+                display: block;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container-fluid cc">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12 ">
+                    <div class="">
+                        <img src="image/tx-banner-pc@3x.png" class="weblogo mt-4 mb-4" alt="">
+                        <img src="image/tx-banner-mobile@3x.png" class="moblogo mt-4 mb-4" alt="">
+                    </div>
+                </div>
+            </div><!--row end-->
+        </div><!--container end-->
+    </div><!--container-fluid end-->
+</body>
+
+</html>
