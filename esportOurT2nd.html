@@ -1,0 +1,509 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <script src="/js/bootstrap.bundle.min.js"></script>
+
+    <style>
+        body {
+            /* background: #6e696914;    */
+            background: black;
+        }
+
+        .box-1 {
+            width: 0;
+        }
+
+        .card {
+            box-shadow: inset 10px -4rem 4rem 0px rgb(0 0 0 / 4%) !important;
+            height: 183px;
+            width: 190px;
+            /* padding: 11px */
+        }
+
+        .card-body {
+            background-color: #987c4b;
+        }
+
+        .info1 {
+            font-weight: 900;
+            font-size: 40px;
+        }
+
+        .p1 {
+            font-size: 16px;
+            font-weight: 700;
+            line-height: 16.4px;
+            margin-bottom: -4px;
+        }
+
+        .img1,
+        .img2 {
+            width: 45%;
+            margin-top: 17px;
+            padding-bottom: 10px;
+
+        }
+
+        .img3,
+        .img4 {
+            width: 45%;
+            margin-top: 15px;
+            margin-bottom: 24px;
+        }
+
+        .img5,
+        .img6 {
+            width: 45%;
+            margin-top: 15px;
+            margin-bottom: 30px;
+        }
+
+        .img7 {
+            width: 67%;
+            margin-top: 49px;
+            margin-bottom: 60px;
+        }
+
+        .img8,
+        .img12 {
+            width: 45%;
+            margin-top: 24px;
+            padding-bottom: 25px;
+        }
+
+        .img11 {
+            width: 79%;
+            margin-top: 40px;
+            margin-bottom: 37px;
+        }
+
+        .img9 {
+            width: 45%;
+            margin-top: 39px;
+            margin-bottom: 39px;
+        }
+
+        .img10,
+        .img13 {
+            width: 45%;
+            margin-top: 29px;
+            margin-bottom: 39px;
+        }
+
+        .img15 {
+            width: 50%;
+            margin-top: 42px;
+            margin-bottom: 53px;
+        }
+
+        .img14 {
+            width: 50%;
+            margin-top: 42px;
+            margin-bottom: 58px;
+        }
+
+        .img16 {
+            width: 52%;
+            margin-top: 45px;
+            margin-bottom: 71px;
+        }
+
+        @media (max-width:768px) {
+            .card {
+                height: 362px;
+                width: 100%;
+                /* padding: 11px; */
+                /* margin-bottom: 12px; */
+            }
+
+            .card-body {
+                background-color: #987c4b;
+                margin-top: 29px;
+            }
+
+            .box-1 {
+                width: 100%;
+                /* margin-bottom: 44px; */
+                margin-bottom: 26px;
+            }
+
+            .box-15 {
+                margin-bottom: 40px;
+            }
+
+            .box-5 {
+                margin-bottom: 23px;
+                margin-top: 15px;
+            }
+
+            .box-8 {
+                margin-bottom: 20px;
+                margin-top: -21px;
+            }
+
+            .box-10 {
+                margin-top: -10px;
+                margin-bottom: 26px;
+            }
+
+            .box-12 {
+                margin-top: 5px;
+                margin-bottom: 8px;
+            }
+
+            .box-14 {
+                margin-top: -7px;
+                margin-bottom: 20px;
+            }
+
+            .box-16 {
+                margin-top: -18px;
+                margin-bottom: 18px;
+            }
+
+
+
+
+            .img1,
+            .img2 {}
+
+            .img3,
+            .img4 {
+                margin-top: 49px;
+                margin-bottom: 9px;
+            }
+
+            .img5,
+            .img6 {
+                padding-bottom: 19px;
+                position: relative;
+                top: 25px;
+            }
+
+            .img7 {
+                margin-top: 68px;
+                padding-bottom: 77px;
+                position: relative;
+                top: 33px;
+
+            }
+
+            .img8,
+            .img12 {
+                margin-top: 55px;
+            }
+
+            .img9,
+            .img10,
+            .img13 {
+                width: 45%;
+                margin-top: 71px;
+                margin-bottom: 32px;
+            }
+
+            .img15,
+            .img14 {
+                padding-bottom: 84px;
+                position: relative;
+                top: 55px;
+            }
+
+            .img16 {
+                padding-bottom: 110px;
+                position: relative;
+                top: 73px;
+            }
+
+            .img11 {
+                padding-bottom: 53px;
+                position: relative;
+                top: 33px;
+            }
+
+            .p1 {
+                font-size: 38.5px;
+                font-weight: 700;
+                line-height: 60.4px;
+                margin-bottom: -5px;
+            }
+
+        }
+
+
+
+        @media (max-width:768px) {
+
+            .ip {
+                display: none;
+            }
+
+            .info1 {
+                font-size: 31px;
+                position: relative;
+                top: 17px;
+            }
+
+        }
+
+
+
+        /* @media (max-width:345px) {
+            /* .col-md-2 {
+                margin-left: 0;
+            } */
+
+        /* .card {
+                height: 121px;
+                width: 101px;
+                padding: 9px;
+            }
+        }  */
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <h3 class="info1">TEAMS ATTENDING</h3>
+        <hr>
+        <div class="row mt-4">
+            <div class="col-md-2">
+                <div class="box-1 mt-3">
+                    <div class="card bg-light shadow-lg">
+                        <center>
+                            <img src="imgEsport/276px-GodLike_2021_allmode.png" class="img1" alt="">
+                        </center>
+                        <div class="card-body">
+                            <center>
+                                <p class="p1">GodLiKe ESPORT</p>
+                            </center>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-2">
+                <div class="box-1 mt-3">
+                    <div class="card bg-light">
+                        <center>
+                            <img src="imgEsport/287px-Inferno_Squad_lightmode.png" class="img2" alt="">
+                        </center>
+                        <div class="card-body">
+                            <center>
+                                <p class="p1">Inferno ESPORT</p>
+                            </center>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-2">
+                <div class="box-1 mt-3">
+                    <div class="card bg-light">
+                        <center>
+                            <img src="imgEsport/328px-Silly_Esports_allmode.png" class="img3" alt="">
+                        </center>
+                        <div class="card-body">
+                            <center>
+                                <p class="p1">Silly ESPORT</p>
+                            </center>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-2">
+                <div class="box-1 mt-3">
+                    <div class="card bg-light">
+                        <center>
+                            <img src="imgEsport/334px-Team_Versatile_allmode.png" class="img4" alt="">
+                        </center>
+                        <div class="card-body">
+                            <center>
+                                <p class="p1">Versatile ESPORT</p>
+                            </center>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-2">
+                <div class="box-5 mt-3">
+                    <div class="card bg-light">
+                        <center>
+                            <img src="imgEsport/355px-Phoenix_Esports_IN_allmode.png" class="img5" alt="">
+                        </center>
+                        <div class="card-body">
+                            <center>
+                                <p class="p1">Phoenix ESPORT</p>
+                            </center>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-2">
+                <div class="box-1 mt-3">
+                    <div class="card bg-light">
+                        <center>
+                            <img src="imgEsport/358px-Reckoning_Esports_2019_allmode.png" class="img6" alt="">
+                        </center>
+                        <div class="card-body">
+                            <center>
+                                <p class="p1">Reckoning ESPORT</p>
+                            </center>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div><!--row 1 end-->
+
+        <div class="row mb-3">
+            <div class="col-md-2">
+                <div class="box-1 mt-3">
+                    <div class="card bg-light">
+                        <center>
+                            <img src="imgEsport/380px-Team_Bliss_lightmode.png" class="img7" alt="">
+                        </center>
+                        <div class="card-body">
+                            <center>
+                                <p class="p1">Bliss ESPORT</p>
+                            </center>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-2 mt-4">
+                <div class="box-8">
+                    <div class="card bg-light">
+                        <center>
+                            <img src="imgEsport/364px-8bit_allmode.png" class="img8" alt="">
+                        </center>
+                        <div class="card-body">
+                            <center>
+                                <p class="p1">8bit ESPORT</p>
+                            </center>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-2">
+                <div class="box-1 mt-3">
+                    <div class="card bg-light">
+                        <center>
+                            <img src="imgEsport/380px-Hyderabad_Hydras.png" class="img9" alt="">
+                        </center>
+                        <div class="card-body">
+                            <center>
+                                <p class="p1">Hyderabad Hydras</p>
+                            </center>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-2">
+                <div class="box-10 mt-3">
+                    <div class="card bg-light">
+                        <center>
+                            <img src="imgEsport/380px-Medal_Esports_(Indian_team)_allmode.png" class="img10" alt="">
+                        </center>
+                        <div class="card-body">
+                            <center>
+                                <p class="p1">Medal ESPORT</p>
+                            </center>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-2">
+                <div class="box-1 mt-3">
+                    <div class="card bg-light">
+                        <center>
+                            <img src="imgEsport/380px-Team_Limra_lightmode.png" class="img13" alt="">
+                        </center>
+                        <div class="card-body">
+                            <center>
+                                <p class="p1">Limra ESPORT</p>
+                            </center>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-2">
+                <div class="box-12 mt-3">
+                    <div class="card bg-light">
+                        <center>
+                            <img src="imgEsport/359px-XSpark_2020_allmode.png" class="img12" alt="">
+                        </center>
+                        <div class="card-body">
+                            <center>
+                                <p class="p1">XSpark ESPORT</p>
+                            </center>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div><!--row 2 end-->
+
+        <div class="row">
+            <div class="col-md-2 ip"></div>
+            <div class="col-md-2">
+                <div class="box-1 mt-3">
+                    <div class="card bg-light">
+                        <center>
+                            <img src="imgEsport/380px-Orangutan.png" class="img11" alt="">
+                        </center>
+                        <div class="card-body">
+                            <center>
+                                <p class="p1">Orangutan ESPORT</p>
+                            </center>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-2">
+                <div class="box-14 mt-3">
+                    <div class="card bg-light">
+                        <center>
+                            <img src="imgEsport/380px-TWOB_lightmode.png" class="img14" alt="">
+                        </center>
+                        <div class="card-body">
+                            <center>
+                                <p class="p1">TWOB ESPORT</p>
+                            </center>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-2">
+                <div class="box-15 mt-3">
+                    <div class="card bg-light">
+                        <center>
+                            <img src="imgEsport/Ignite_Gaming_lightmode.png" class="img15" alt="">
+                        </center>
+                        <div class="card-body">
+                            <center>
+                                <p class="p1">Ignite ESPORT</p>
+                            </center>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-2 ">
+                <div class="box-16 mt-3">
+                    <div class="card bg-light">
+                        <center>
+                            <img src="imgEsport/Numen_Esports_allmode.png" class="img16" alt="">
+                        </center>
+                        <div class="card-body">
+                            <center>
+                                <p class="p1">Numen ESPORT</p>
+                            </center>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div><!--row 3 end-->
+    </div><!--container end-->
+</body>
+
+</html>

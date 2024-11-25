@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <script src="/js/bootstrap.bundle.min.js"></script>
+    <style>
+        .ab {
+            background: #00000082;
+        }
+
+        .weblogo {
+            height: 30px;
+            margin-left: 26px;
+            margin-top: 4px;
+            margin-right: 50px;
+        }
+
+        .moblogo {
+            display: none;
+        }
+
+        .f li a {
+            color: white;
+            font-size: 13px;
+            margin-right: 33px;
+            font-weight: 600;
+            letter-spacing: 1px;
+            font-family: var(--ri-forma-regular);
+        }
+
+        .f1:hover {
+            background: #987c4b;
+            border-radius: 5px;
+            width: 90%;
+        }
+
+        @media(max-width:768px) {
+            .weblogo {
+                display: none;
+            }
+
+            .moblogo {
+                display: block;
+                height: 30px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <nav class="navbar ab navbar-expand-md fixed-top">
+        <div class="container-fluid">
+            <img src="image/eSportCup.png" alt="" class="weblogo">
+            <img src="image/eSportCup.png" alt="" class="moblogo">
+
+            <button class="navbar-toggler" data-bs-target="#aaa" data-bs-toggle="collapse">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="navbar-collapse collapse text-center" id="aaa">
+                <ul class="navbar-nav f">
+                    <li><a href="esport.html" class=" f1 nav-link">HOME</a></li>
+                    <li><a href="Esport_about.html" class=" f1 nav-link">ABOUT</a></li>
+                    <li><a href="" class=" f1 nav-link">TEAMS</a></li>
+                    <li><a href="" class="f1 nav-link">WINNERS</a></li>
+                </ul>
+            </div>
+
+
+        </div><!--contaner-fluid end-->
+    </nav><!--navbar end-->
+</body>
+
+</html>

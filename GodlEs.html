@@ -1,0 +1,544 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Team GodLike</title>
+    <!--icon-->
+    <link rel="icon" href="imgEsport/276px-GodLike_2021_allmode.png">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <script src="/js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css"
+        integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        .ab {
+            background: #00000082;
+        }
+
+        .weblogo {
+            height: 41px;
+            
+            margin-left: 26px;
+            margin-top: 4px;
+            margin-right: 50px;
+        }
+
+        .moblogo {
+            display: none;
+        }
+
+        .f li a {
+            color: white;
+            font-size: 13px;
+            margin-right: 33px;
+            font-weight: 600;
+            letter-spacing: 1px;
+            font-family: var(--ri-forma-regular);
+        }
+
+        .f1:hover {
+            background: #987c4b;
+            border-radius: 5px;
+            width: 90%;
+        }
+
+
+        .img1 {
+            width: 100%;
+            filter: opacity(85%);
+            transition: all 1s ease;
+
+        }
+
+        .img1:hover {
+            filter: opacity(100%);
+            transform: scale(1.05);
+            transition-timing-function: cubic-bezier(.4, 0, .2, 1);
+        }
+
+        .selector {
+            overflow: hidden;
+        }
+
+        .about-1 {
+            background-color: #f4d07f40;
+            text-align: center;
+            font-size: 33px;
+            line-height: 54px;
+        }
+
+        .about-2 {
+            background-color: #80808096;
+            text-align: center;
+            line-height: 40px;
+        }
+
+        .flag {
+            width: 23px;
+        }
+
+        .logo {
+            width: 27px;
+            padding-bottom: 9px;
+        }
+
+        .info1 {
+            font-size: 16px;
+            line-height: 32px;
+        }
+
+        .info2 {
+            font-size: 18px;
+        }
+
+
+
+        .fa-x-twitter,
+        .fa-instagram,
+        .fa-youtube {
+            font-size: 26px;
+            width: 100%;
+            line-height: 38px;
+            text-align: center;
+            background-color: #000000d4;
+            color: white;
+            border-radius: 4px;
+        }
+
+        .fa-x-twitter:hover {
+            color: skyblue;
+            background-color: #0b0a0a14;
+        }
+
+
+        .fa-youtube:hover {
+            color: red;
+            background-color: #0b0a0a14;
+        }
+
+        .fa-instagram:hover {
+            color: black;
+            background-color: #0b0a0a14;
+        }
+
+        .logo1 {
+            /* background: linear-gradient(to right, #51462e, #977c4b); */
+            background: linear-gradient(to right, #512e2e00, #010101f0, #ffffff00);
+            padding: 24px 0;
+            overflow: hidden;
+            white-space: nowrap;
+
+        }
+
+        .logo1-slide {
+            animation: 12s slide infinite linear;
+            display: inline-block;
+        }
+
+        .logo1-slide img {
+            height: 36px;
+            margin: 0 25px;
+        }
+
+        /* .logo1-slide:hover{
+            animation-play-state:paused;
+        } */
+        @keyframes slide {
+            from {
+                transform: translateX(0);
+            }
+
+            to {
+                transform: translateX(-100%);
+            }
+        }
+
+        .cc {
+            background: url(image/footer\ Background_aaa878262d.png);
+            width: 100%;
+            /* height: 159px; */
+
+        }
+
+        .cc li {
+            list-style: none;
+            margin-top: 10px;
+        }
+
+        .cc li a {
+            color: white;
+            text-decoration: none;
+
+        }
+
+        .flex {
+            display: flex;
+            justify-content: space-between;
+            padding-right: 508px;
+        }
+
+        .cc li .f2 {
+            color: #987c4b;
+            font-weight: 600;
+        }
+
+        .f2 {
+            position: relative;
+            width: max-content;
+        }
+
+        .f2::after {
+            content: "";
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            background: #987c4b;
+            height: 2px;
+            width: 0;
+            border-radius: 10px;
+            transition: .8s;
+        }
+
+        .f2:hover::after {
+            width: 100%;
+        }
+
+        .r1 {
+            margin-left: 14px;
+        }
+
+        @media(max-width:768px) {
+            .weblogo {
+                display: none;
+            }
+
+            .moblogo {
+                display: block;
+                height: 41px;
+            }
+
+            .img1 {
+                width: 100%;
+            }
+
+            .cc {
+                width: 100%;
+            }
+
+            .flex {
+                padding-right: 242px;
+            }
+        }
+
+        @media(max-width:1280px) {
+            .flex {
+                padding-right: 257px;
+                /* margin-left: 42px; */
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <nav class="navbar ab navbar-expand-md fixed-top">
+        <div class="container-fluid">
+            <img src="mergeTeam/Godl_Ecc.png" alt="" class="weblogo">
+            <img src="mergeTeam/Godl_Ecc.png" alt="" class="moblogo">
+
+            <button class="navbar-toggler" data-bs-target="#aaa" data-bs-toggle="collapse">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="navbar-collapse collapse text-center" id="aaa">
+                <ul class="navbar-nav f">
+                    <li><a href="esport.html" class=" f1 nav-link">HOME</a></li>
+                    <li><a href="Esport_about.html" class=" f1 nav-link">ABOUT</a></li>
+                    <li><a href="OurT1st.html" class=" f1 nav-link">TEAMS</a></li>
+                    <li><a href="" class="f1 nav-link">WINNERS</a></li>
+                </ul>
+            </div>
+
+
+        </div><!--contaner-fluid end-->
+    </nav><!--navbar end-->
+
+    <div class="container mt-5 mb-5">
+        <h3 class="about-1"> <span><img src="imgEsport/276px-GodLike_2021_allmode.png" class="logo" alt=""></span>
+            JONATHAN</h3>
+        <div class="row">
+
+            <div class="col-md-5">
+                <div class="selector">
+                    <img src="mergeTeam/Jonathan_2024.jpg" class="img1" alt="">
+                </div>
+            </div>
+            <div class="col-md-7">
+                <h3 class="about-2">PLAYER INFORMATION</h3>
+
+                <p class="info1"><b>Romanized Name:</b> <span class="info2">Jonathan Jude Amaral</span></p>
+
+                <p class="info1"><b>Nationality:</b> <span><img src="mergeTeam/india.png" class="flag" alt=""></span>
+                    INDIA</p>
+
+                <p class="info1"><b>Born:</b> <span class="info2">September 21, 2002 (age 22)</span></p>
+
+                <p class="info1"><b>Status:</b><span class="info2"> Active</span></p>
+
+                <p class="info1"><b>Years Active (Player):</b> <span class="info2">2019 - Present</span></p>
+
+                <p class="info1"><b>Approx. Total Winnings:</b><span class="info2"> $89,792</span></p>
+
+                <h2 class="about-2">Links</h2>
+
+                <div class="row mt-2">
+                    <div class="col-md-4">
+                        <a href="https://youtube.com/@jonathangamingyt?si=fYHTUtJLifgHb8AM">
+                            <i class="fa-brands fa-youtube mt-2"></i>
+                        </a>&nbsp;&nbsp;
+
+                    </div>
+                    <div class="col-md-4">
+                        <a href="https://www.instagram.com/ig_jonathangaming/profilecard/?igsh=eG9lOHk2NGV5OG0=">
+                            <i class="fa-brands fa-instagram mt-2"></i>
+                        </a>
+                    </div>
+                </div><!--row 1.1-->
+
+
+            </div>
+        </div><!--row 1 end-->
+    </div> <!--container 1 end-->
+
+    <hr style="margin: auto; width: 90%;">
+
+    <div class="container mt-5 mb-5">
+        <h3 class="about-1"> <span><img src="imgEsport/276px-GodLike_2021_allmode.png" class="logo" alt=""></span>
+            ADMINO</h3>
+        <div class="row">
+
+            <div class="col-md-5">
+                <div class="selector">
+                    <img src="mergeTeam/ADMINO_2024.jpg" class="img1" alt="">
+                </div>
+            </div>
+            <div class="col-md-7">
+                <h3 class="about-2">PLAYER INFORMATION</h3>
+
+                <p class="info1"><b>Romanized Name:</b> <span class="info2">Tanishk Singh</span></p>
+
+                <p class="info1"><b>Nationality:</b> <span><img src="mergeTeam/india.png" class="flag" alt=""></span>
+                    INDIA</p>
+
+                <p class="info1"><b>Born:</b> <span class="info2">October 19, 2005 (age 19)</span></p>
+
+                <p class="info1"><b>Status:</b><span class="info2"> Active</span></p>
+
+                <p class="info1"><b>Team:</b><span class="info2"> GodLike Esports</span></p>
+
+                <p class="info1"><b>Approx. Total Winnings:</b><span class="info2"> $22,792</span></p>
+
+                <h2 class="about-2">Links</h2>
+
+                <div class="row mt-2">
+                    <div class="col-md-4">
+                        <a href="twitter.com/ig_jonathan16">
+                            <i class="fa-brands fa-x-twitter mt-2"></i>
+                        </a>&nbsp;&nbsp;
+                    </div>
+                    <div class="col-md-4">
+                        <a href="https://youtube.com/@admino_gaming19?si=_eL4yF3QXbhjpoZf">
+                            <i class="fa-brands fa-youtube mt-2"></i>
+                        </a>&nbsp;&nbsp;
+
+                    </div>
+                    <div class="col-md-4">
+                        <a href="https://www.instagram.com/admino_gaming/profilecard/?igsh=MWNoYnY1ZHNhYXhlcg==">
+                            <i class="fa-brands fa-instagram mt-2"></i>
+                        </a>
+                    </div>
+                </div><!--row 2.1-->
+
+
+            </div>
+        </div><!--row 2 end-->
+    </div> <!--container 2 end-->
+
+    <hr style="margin: auto; width: 90%;">
+
+    <div class="container mt-5 mb-5">
+        <h3 class="about-1"> <span><img src="imgEsport/276px-GodLike_2021_allmode.png" class="logo" alt=""></span>
+            SIMP</h3>
+        <div class="row">
+
+            <div class="col-md-5">
+                <div class="selector">
+                    <img src="mergeTeam/SIMP_2024.png" class="img1" alt="">
+                </div>
+            </div>
+            <div class="col-md-7">
+                <h3 class="about-2">PLAYER INFORMATION</h3>
+
+                <p class="info1"><b>Romanized Name:</b> <span class="info2">Kaushal Jaiswal</span></p>
+
+                <p class="info1"><b>Nationality:</b> <span><img src="mergeTeam/india.png" class="flag" alt=""></span>
+                    INDIA</p>
+
+                <p class="info1"><b>Born:</b> <span class="info2">September 7, 2003 (age 21)</span></p>
+
+                <p class="info1"><b>Status:</b><span class="info2"> Active</span></p>
+
+                <p class="info1"><b>Team:</b><span class="info2"> GodLike Esports</span></p>
+
+                <p class="info1"><b>Approx. Total Winnings:</b><span class="info2"> $8,517</span></p>
+
+                <h2 class="about-2">Links</h2>
+
+                <div class="row mt-2">
+                    <div class="col-md-4">
+                        <a href="twitter.com/ig_jonathan16">
+                            <i class="fa-brands fa-x-twitter mt-2"></i>
+                        </a>&nbsp;&nbsp;
+                    </div>
+                    <div class="col-md-4">
+                        <a href="https://youtube.com/@simppgamingg?si=37la61UnF7t_B4jZ">
+                            <i class="fa-brands fa-youtube mt-2"></i>
+                        </a>&nbsp;&nbsp;
+
+                    </div>
+                    <div class="col-md-4">
+                        <a href="https://www.instagram.com/simpp_bgmi/profilecard/?igsh=YXp2ZmV5eW52dGJu">
+                            <i class="fa-brands fa-instagram mt-2"></i>
+                        </a>
+                    </div>
+                </div><!--row 3.1-->
+
+
+            </div>
+        </div><!--row 3 end-->
+    </div> <!--container 3 end-->
+
+    <hr style="margin: auto; width: 90%;">
+
+    <div class="container mt-5 mb-5">
+        <h3 class="about-1"> <span><img src="imgEsport/276px-GodLike_2021_allmode.png" class="logo" alt=""></span>
+            Punkk</h3>
+        <div class="row">
+
+            <div class="col-md-5">
+                <div class="selector">
+                    <img src="mergeTeam/Punkk_2024.jpg" class="img1" alt="">
+                </div>
+            </div>
+            <div class="col-md-7">
+                <h3 class="about-2">PLAYER INFORMATION</h3>
+
+                <p class="info1"><b>Romanized Name:</b> <span class="info2">Ashutosh Singh</span></p>
+
+                <p class="info1"><b>Nationality:</b> <span><img src="mergeTeam/india.png" class="flag" alt=""></span>
+                    INDIA</p>
+
+                <p class="info1"><b>Born:</b> <span class="info2">February 5, 2002 (age 22)</span></p>
+
+                <p class="info1"><b>Status:</b><span class="info2"> Active</span></p>
+
+                <p class="info1"><b>Team:</b><span class="info2"> GodLike Esports</span></p>
+
+                <p class="info1"><b>Alternate IDs:</b> <span class="info2">Punk</span></p>
+
+                <p class="info1"><b>Approx. Total Winnings:</b><span class="info2"> $41,773</span></p>
+
+                <h2 class="about-2">Links</h2>
+
+                <div class="row mt-2">
+                    <div class="col-md-4">
+                        <a href="twitter.com/ig_jonathan16">
+                            <i class="fa-brands fa-x-twitter mt-2"></i>
+                        </a>&nbsp;&nbsp;
+                    </div>
+                    <div class="col-md-4">
+                        <a href="https://youtube.com/@punkk?si=LmrDeAX8ObX4ZsYK">
+                            <i class="fa-brands fa-youtube mt-2"></i>
+                        </a>&nbsp;&nbsp;
+
+                    </div>
+                    <div class="col-md-4">
+                        <a href="https://www.instagram.com/ig_punkk/profilecard/?igsh=MW5pMnc1dW5wNDR5bg==">
+                            <i class="fa-brands fa-instagram mt-2"></i>
+                        </a>
+                    </div>
+                </div><!--row 3.1-->
+
+
+            </div>
+        </div><!--row 3 end-->
+    </div> <!--container 3 end-->
+
+    <!--slide start-->
+    <div class="logo1 mt-5 mb-4">
+        <div class="logo1-slide">
+            <img src="image/eSportCup.png" alt="">
+            <img src="image/Ecc on web.png" alt="">
+            <img src="image/eSportCup.png" alt="">
+            <img src="image/Ecc on web.png" alt="">
+            <img src="image/eSportCup.png" alt="">
+            <img src="image/Ecc on web.png" alt="">
+        </div>
+        <div class="logo1-slide">
+            <img src="image/eSportCup.png" alt="">
+            <img src="image/Ecc on web.png" alt="">
+            <img src="image/eSportCup.png" alt="">
+            <img src="image/Ecc on web.png" alt="">
+            <img src="image/eSportCup.png" alt="">
+            <img src="image/Ecc on web.png" alt="">
+        </div>
+    </div>
+    <!--slide end-->
+
+    <footer>
+        <div class="container-fluid cc">
+            <div class="row">
+                <div class="col-md-1"></div>
+                <div class="col-md-3">
+                    <img src="image/eSportCup.png" alt="" width="302px" style="margin-top: 42px;">
+                </div>
+                <div class="col-md-1"></div>
+                <div class="col-md-6 mt-3 mb-5">
+                    <div class="row r1">
+                        <div class="flex">
+                            <div class="col-md-3">
+                                <ul>
+                                    <li><a class="f2" href="esport.html">Home</a></li>
+                                    <li><a class="f2" href="Esport_about.html">About</a></li>
+                                    <li><a class="f2" href="OurT1st.html">Teams</a></li>
+                                    <li><a class="f2" href="">Winners</a></li>
+                                </ul>
+                            </div>
+                            <div class="col-md-3 mb-4">
+                                <ul>
+                                    <li><a class="f2" href="EsportPrivacy.html">Privacy</a></li>
+                                    <li><a class="f2" href="EsportsFAQs.html">FAQ</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div><!--row end-->
+        </div><!--container fluid end-->
+    </footer>
+    <div class="container-fluid" style="background: #987c4b;">
+        <div class="row">
+            <div class="col-md-12">
+                <h6 class=" text-center text-white mt-2" style="font-size: 12px;">© 2024 Esports Champ Cup | All rights
+                    reserved.</h6>
+            </div>
+        </div><!--row end-->
+    </div><!--container end-->
+    <!--footer end-->
+
+</body>
+
+</html>
